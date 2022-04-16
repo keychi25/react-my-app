@@ -1,10 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import "./index.css";
+
 import Game from "./Game";
+const App: React.FunctionComponent = () => {
+  return (
+    <div>
+      <Game />,
+    </div>
+  );
+};
 
-ReactDOM.render(<Game />, document.getElementById("root"));
-
+ReactDOM.render(<App />, document.getElementById("root"));
 /*
 1. 履歴内のそれぞれの着手の位置を (col, row) というフォーマットで表示する。[済み]
 2. 着手履歴のリスト中で現在選択されているアイテムを太字にする。[済み]
